@@ -50,6 +50,6 @@ if __name__ == '__main__':
     startTime = time.time()
 
     # data.loadRequestData('/Users/xxx/Desktop/StressTestData-202007161112.txt')
-    log.logger.info("读取数据消耗时间{}毫秒".format((time.time() - startTime) * 1000))
+    log.logger.info("讀取資料消耗時間{}毫秒".format((time.time() - startTime) * 1000))
     check_param(thread_count - 1, request_url, method, param)
     sc.start(slowTime, roundCount, thread_count, request_url, method, param, read)
